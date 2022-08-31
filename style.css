@@ -1,0 +1,139 @@
+.Cabecalho
+{
+    height: 90px;
+    background: #D5F2E3;
+}
+.Logotipo 
+{
+    width: 7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Menu
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -55px;
+}
+.Opcao
+{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 24px;
+    background: transparent;
+}
+.Opcao:hover
+{
+    transition: 500ms;
+    color: red;
+}
+
+.Fundo1 
+{
+width: 100%;
+}
+
+.slider
+{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides
+{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}¨
+
+.slides input 
+{
+    display: none;
+    display: hidden;
+}
+
+.slide
+{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img
+{
+    width: 700px;
+}
+
+.manual-navegacao
+{
+    position: absolute;
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn
+{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+.manual-btn:hover
+{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first
+{
+    margin-left: 0;
+}
+#radio2:checked ~ .first
+{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first
+{
+    margin-left: -53%;
+}
+
+.navegacao-auto
+{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegacao-auto .auto-btn1
+{
+    background-color: #fff;
+}
+#radio2:checked ~ .navegacao-auto .auto-btn1
+{
+    background-color: #fff;
+}
+#radio3:checked ~ .navegacao-auto .auto-btn1
+{
+    background-color: #fff;
+}
